@@ -15,7 +15,11 @@ public class MusicPlayer : MonoBehaviour {
         
     }
 
-    private void PlayNextLevel () {
+    private void Awake() {
+        DontDestroyOnLoad(gameObject); //don't destroy the thing attached to (in this case MusicPlayer script) so when it goes to next level MusicPlayer is still there
+    }
+
+    void PlayNextLevel () {
         Invoke("LoadNextLevel", levelLoadDelay);
     }
 
