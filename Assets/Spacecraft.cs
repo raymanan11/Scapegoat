@@ -33,7 +33,7 @@ public class Spacecraft : MonoBehaviour {
 
     private void SpaceshipRotation() {
         float pitchPosition = transform.localPosition.y * positionPitchFactor; // to pitch the plane based off of y location not of control throw
-        float pitchControlThrow = yMvmt * controlPitchFactor; // to pitch the plane based off of user input and control throw
+        float pitchControlThrow = yMvmt * controlPitchFactor; // to pitch the plane based off of user input and control throw (jerky motion of controller)
         float pitch = pitchPosition + pitchControlThrow;
 
         float yaw = transform.localPosition.x * positionYawFactor; // to make the nose of the plane stay in front which means it's not user control throw and just x location
@@ -54,6 +54,7 @@ public class Spacecraft : MonoBehaviour {
 
     private float xControls() {
         xMvmt = CrossPlatformInputManager.GetAxis("Horizontal"); // generic horizontal input for keyboard and controller
+        print(xMvmt);
         float xOffset = xMvmt * xSpeed * Time.deltaTime; // Time.deltaTime is based off of whatever computer you are playing on so the movement is consistent throughout devices
         float rawXPos = transform.localPosition.x + xOffset; //changes the local x transform of the Spacecraft but doesn't restrict movement
         float xPos = Mathf.Clamp(rawXPos, xMin, xMax); //restricts the movement of the spacecraft to only move from -15 to 15 units
