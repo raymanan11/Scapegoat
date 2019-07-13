@@ -14,7 +14,7 @@ using UnityEditor;
  * Enables Waypoint based speed settings.
  * Enables invoke of method calls triggered by waypoints.
  **/
-public class BetterWaypointFollower : MonoBehaviour {
+public class BetterWaypointFollowers : MonoBehaviour {
     public UnityEngine.Object circuitObject;
     public WaypointCircuit circuit;
     public float routeSpeed = 50f;
@@ -135,7 +135,7 @@ public class BetterWaypointFollower : MonoBehaviour {
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(BetterWaypointFollower))]
-public class BetterWaypointEditor : Editor {
+public class BetterWaypointEditors : Editor {
     List<String> monoBehaviours;
     int totalMethods;
 

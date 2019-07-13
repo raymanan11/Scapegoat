@@ -67,4 +67,13 @@ public class Spacecraft : MonoBehaviour {
         float yPos = Mathf.Clamp(rawYPos, yMin, yMax);
         return yPos;
     }
+
+    void OnCollisionEnter(Collision collision) {
+        print("player collided with something");
+    }
+
+    void OnTriggerEnter(Collider other) {
+        print("Player triggered something");
+    }
+
 }
