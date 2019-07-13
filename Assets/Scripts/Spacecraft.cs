@@ -5,30 +5,38 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Spacecraft : MonoBehaviour {
 
+    [Header("Fighter Jet Speed")]
     [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 25f; // used to control the speed at which the spaceship moves
     [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 25f; 
 
+    [Header("Fighter Jet Boundaries")]
     [SerializeField] float xMax = 15f;
     [SerializeField] float xMin = -15f; //used to limit the movement of the ship (x and y)
     [SerializeField] float yMax = 7f;
     [SerializeField] float yMin = -7f;
 
+    [Header("Fighter Jet Position")]
+    [SerializeField] float positionPitchFactor = -1f; // number got from moving the rotation and is used to pitch the ship (up and down)
+    [SerializeField] float positionYawFactor = 1.5f;
+
+    [Header("Fighter Jet Control Throw")]
+    [SerializeField] float controlPitchFactor = 10f;
+    [SerializeField] float controlRollFactor = -35f;
+
     float xMvmt, yMvmt;
+    bool controlsOn = true;
 
-    [SerializeField] float positionPitchFactor = -1.5f; // number got from moving the rotation and is used to pitch the ship (up and down)
-    [SerializeField] float controlPitchFactor = 1.5f;
-    [SerializeField] float positionYawFactor = -5f;
-    [SerializeField] float controlRollFactor = -5f;
-
-    // Start is called before the first frame update
-    void Start() {
-        
-    }
 
     // Update is called once per frame
     void Update() {
-        SpaceshipPosition();
-        SpaceshipRotation();
+        if (controlsOn) {
+            SpaceshipPosition();
+            SpaceshipRotation();
+        }
+    }
+
+    void FighterJetDeath() { // named from string reference from CollisionController
+        controlsOn = false;
     }
 
     private void SpaceshipRotation() {
@@ -68,12 +76,5 @@ public class Spacecraft : MonoBehaviour {
         return yPos;
     }
 
-    void OnCollisionEnter(Collision collision) {
-        print("player collided with something");
-    }
-
-    void OnTriggerEnter(Collider other) {
-        print("Player triggered something");
-    }
 
 }
