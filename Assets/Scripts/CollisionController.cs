@@ -16,8 +16,7 @@ public class CollisionController : MonoBehaviour
     }
 
     private void DeathSequence() { // only to turn controls off
-        SendMessage("FighterJetDeath");
-        
+        SendMessage("FighterJetDeath"); 
     }
 
     private void ReloadLevel() {

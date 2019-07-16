@@ -36,7 +36,7 @@ public class Spacecraft : MonoBehaviour {
     }
 
     void FighterJetDeath() { // named from string reference from CollisionController
-        controlsOn = false;
+        controlsOn = false; 
     }
 
     private void SpaceshipRotation() {
