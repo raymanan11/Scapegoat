@@ -15,7 +15,7 @@ public class CollisionController : MonoBehaviour
         Invoke("ReloadLevel", levelLoadDelay);
     }
 
-    private void DeathSequence() { // only to turn controls off
+    private void DeathSequence() { // only to turn controls off and by using SendMessage, it will communicate with the script that deals with spacecraft movement and stop
         SendMessage("FighterJetDeath"); 
     }
 
