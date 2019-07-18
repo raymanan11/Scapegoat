@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemySpacecrafts : MonoBehaviour
 {
     [SerializeField] GameObject enemyDeathFX;
+    [SerializeField] Transform parent;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,9 @@ public class EnemySpacecrafts : MonoBehaviour
     }
 
     void OnParticleCollision(GameObject other) {
-        Instantiate(enemyDeathFX, transform.position, Quaternion.identity);// Before destroying the enemy, there has to be an explosion dropped or instantiated 
-                                                                           //at the position of enemy with no roation
+        GameObject deathFX = Instantiate(enemyDeathFX, transform.position, Quaternion.identity);// Before destroying the enemy, there has to be an explosion dropped or instantiated 
+                                                                                                //at the position of enemy with no roation
+        deathFX.transform.parent = parent;
         Destroy(gameObject); //when it is attached to the enemy gameobjects, it will print out
     }
 }
