@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Spacecraft : MonoBehaviour {
+
+    [Header("Guns")]
+    [SerializeField] GameObject[] bullets;
 
     [Header("Fighter Jet Speed")]
     [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 25f; // used to control the speed at which the spaceship moves
@@ -32,25 +36,12 @@ public class Spacecraft : MonoBehaviour {
         if (controlsOn) {
             SpaceshipPosition();
             SpaceshipRotation();
+            SpaceshipShooting();
         }
     }
 
     void FighterJetDeath() { // named from string reference from CollisionController
         controlsOn = false; 
-    }
-
-    private void SpaceshipRotation() {
-        float pitchPosition = transform.localPosition.y * positionPitchFactor; // to pitch the plane based off of y location not of control throw
-        float pitchControlThrow = yMvmt * controlPitchFactor; // to pitch the plane based off of user input and control throw (jerky motion of controller)
-        float pitch = pitchPosition + pitchControlThrow;
-
-        float yaw = transform.localPosition.x * positionYawFactor; // to make the nose of the plane stay in front which means it's not user control throw and just x location
-
-        float roll = xMvmt * controlRollFactor; // roll is based on controller throw or keyboard movement which is why xMvmt is needed because it's based off user input
-
-        // pitch (x) and the roll (z) is what needs the ontrol throw meaning xMvmt and yMvmt because it's based off of user input
-
-        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
     private void SpaceshipPosition() {
@@ -76,5 +67,38 @@ public class Spacecraft : MonoBehaviour {
         return yPos;
     }
 
+    private void SpaceshipRotation() {
+        float pitchPosition = transform.localPosition.y * positionPitchFactor; // to pitch the plane based off of y location not of control throw
+        float pitchControlThrow = yMvmt * controlPitchFactor; // to pitch the plane based off of user input and control throw (jerky motion of controller)
+        float pitch = pitchPosition + pitchControlThrow;
 
+        float yaw = transform.localPosition.x * positionYawFactor; // to make the nose of the plane stay in front which means it's not user control throw and just x location
+
+        float roll = xMvmt * controlRollFactor; // roll is based on controller throw or keyboard movement which is why xMvmt is needed because it's based off user input
+
+        // pitch (x) and the roll (z) is what needs the ontrol throw meaning xMvmt and yMvmt because it's based off of user input
+
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    private void SpaceshipShooting() {
+       if (CrossPlatformInputManager.GetButton("Fire")) {
+            FireGuns();
+       }
+       else {
+            StopGuns();
+        }
+    }
+
+    private void FireGuns() {
+        foreach (GameObject bullet in bullets) {
+            bullet.SetActive(true);
+        }
+    }
+
+    private void StopGuns() {
+        foreach (GameObject bullet in bullets) {
+            bullet.SetActive(false);
+        }
+    }
 }
