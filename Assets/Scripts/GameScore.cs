@@ -17,7 +17,6 @@ public class GameScore : MonoBehaviour
     }
 
     public void Score(int scorePerShot) { // allows other classes to call this function in order to update the score
-        // hello there my good friend
         score = score + scorePerShot;
         scoreText.text = score.ToString();
     }
