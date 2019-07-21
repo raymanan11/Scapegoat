@@ -16,8 +16,8 @@ public class GameScore : MonoBehaviour
         scoreText.text = score.ToString(); // the .text gets the actual string in the text box and makes it equal to our score variable
     }
 
-    public void Score(int scorePerShot) { // allows other classes to call this function in order to update the score
-        score = score + scorePerShot;
+    public void Score(int scorePerHit) { // allows other classes to call this function in order to update the score
+        score = score + scorePerHit;
         scoreText.text = score.ToString();
     }
 }
