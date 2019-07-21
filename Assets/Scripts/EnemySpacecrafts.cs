@@ -8,6 +8,7 @@ public class EnemySpacecrafts : MonoBehaviour
     [SerializeField] GameObject enemyDeathFX;
     [SerializeField] Transform parent;
     [SerializeField] int scorePerShot = 5;
+    [SerializeField] int maximumShots = 6;
 
     GameScore gameScore; // a reference to the GameScore script
 
@@ -25,6 +26,13 @@ public class EnemySpacecrafts : MonoBehaviour
 
     void OnParticleCollision(GameObject other) {
         gameScore.Score(scorePerShot); // access the function from GameScore script
+        maximumShots = maximumShots - 1;
+        if (maximumShots < 1) {
+            DestroyEnemy();
+        }
+    }
+
+    private void DestroyEnemy() {
         GameObject deathFX = Instantiate(enemyDeathFX, transform.position, Quaternion.identity);// Before destroying the enemy, there has to be an explosion dropped or instantiated 
                                                                                                 //at the position of enemy with no roation
         deathFX.transform.parent = parent;

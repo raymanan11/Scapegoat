@@ -171,6 +171,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 15
+  maximumShots: 6
 --- !u!114 &138098309 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7890207277050668943, guid: ffe1230962e98a6478227091544c6dde,
@@ -205,6 +206,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 10
+  maximumShots: 6
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +397,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 25
+  maximumShots: 6
 --- !u!1 &252866116
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,6 +540,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 15
+  maximumShots: 6
 --- !u!1 &473202575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 376418874681832079, guid: 2647e1d276c1f75458013f63b69875d0,
@@ -559,6 +563,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 10
+  maximumShots: 6
 --- !u!1 &516282267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 377066213562106634, guid: 2647e1d276c1f75458013f63b69875d0,
@@ -581,6 +586,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 25
+  maximumShots: 6
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +763,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 20
+  maximumShots: 6
 --- !u!1 &718974233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 377066212974374043, guid: 2647e1d276c1f75458013f63b69875d0,
@@ -779,6 +786,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 25
+  maximumShots: 6
 --- !u!1 &762570715
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +876,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 15
+  maximumShots: 6
 --- !u!1 &898626728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 377347604207342110, guid: 2647e1d276c1f75458013f63b69875d0,
@@ -927,6 +936,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 20
+  maximumShots: 6
 --- !u!1 &1004528181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1051,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 5
+  maximumShots: 6
 --- !u!1 &1204194435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 376738208556209877, guid: 2647e1d276c1f75458013f63b69875d0,
@@ -1063,6 +1074,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 5
+  maximumShots: 6
 --- !u!1 &1249718238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 376706139790470214, guid: 2647e1d276c1f75458013f63b69875d0,
@@ -1085,6 +1097,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 5
+  maximumShots: 6
 --- !u!1 &1250575391 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 376418873398835304, guid: 2647e1d276c1f75458013f63b69875d0,
@@ -1107,6 +1120,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 10
+  maximumShots: 6
 --- !u!1 &1429506989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1045787495654256889, guid: 6d2450ada67f99d42a09ec4250897af5,
@@ -1148,6 +1162,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 5
+  maximumShots: 6
 --- !u!1 &1851025193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,6 +1391,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 5
+  maximumShots: 6
 --- !u!1 &2071505181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 376738209357592292, guid: 2647e1d276c1f75458013f63b69875d0,
@@ -1398,6 +1414,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 5
+  maximumShots: 6
 --- !u!1 &2124941653 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 377347605582113434, guid: 2647e1d276c1f75458013f63b69875d0,
@@ -1457,6 +1474,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 762570716}
   scorePerShot: 20
+  maximumShots: 6
 --- !u!4 &4944203133926624 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4778017617726498684, guid: e489f766cb55b2b48acc580b1f07166d,
@@ -1602,37 +1620,37 @@ PrefabInstance:
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.17096125
+      value: -0.0836545
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.2644398
+      value: -0.82840216
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.08988814
+      value: -0.21329568
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9448619
+      value: 0.5111329
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.939774
+      value: 11.944659
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -24.692614
+      value: -78.108536
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 29.231571
+      value: 3.4844825
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617671, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
@@ -1707,6 +1725,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.36100003
+      objectReference: {fileID: 0}
+    - target: {fileID: 951953223, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
+      propertyPath: positionYawFactor
+      value: 1.85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
