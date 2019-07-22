@@ -34,7 +34,7 @@ public class EnemySpacecrafts : MonoBehaviour
 
     private void DestroyEnemy() {
         GameObject deathFX = Instantiate(enemyDeathFX, transform.position, Quaternion.identity);// Before destroying the enemy, there has to be an explosion dropped or instantiated 
-                                                                                                //at the position of enemy with no roation
+                                                                                                //at the position of enemy with no rotation
         deathFX.transform.parent = parent;
         Destroy(gameObject); //when it is attached to the enemy gameobjects, it will print out
     }
