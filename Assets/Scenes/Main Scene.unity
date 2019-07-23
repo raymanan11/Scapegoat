@@ -1133,6 +1133,97 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1504300581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504300585}
+  - component: {fileID: 1504300584}
+  - component: {fileID: 1504300583}
+  - component: {fileID: 1504300582}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1504300582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504300581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1504300583
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504300581}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 499c74d87f0e93a46a8f1d082b1dcf1c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1504300584
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504300581}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1504300585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504300581}
+  m_LocalRotation: {x: 0.023941407, y: 0.18474138, z: 0.12626977, w: 0.9743477}
+  m_LocalPosition: {x: 206.2, y: 69.1, z: 75.6}
+  m_LocalScale: {x: 183.69627, y: 25.259193, z: 17.79302}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 21.472, z: 14.768001}
 --- !u!1 &1505542004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1370,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715817279}
-  m_LocalRotation: {x: 0.07161109, y: 0.7225173, z: 0.062197108, w: -0.6848154}
+  m_LocalRotation: {x: 0.07979346, y: 0.68803895, z: 0.05127993, w: -0.71944827}
   m_LocalPosition: {x: 518.6, y: -40.36, z: 512.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1766,22 +1857,22 @@ PrefabInstance:
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.07979346
+      value: 0.07161109
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.68803895
+      value: 0.7225173
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.05127993
+      value: 0.062197108
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.71944827
+      value: -0.6848154
       objectReference: {fileID: 0}
     - target: {fileID: 1045787496164617664, guid: 6d2450ada67f99d42a09ec4250897af5,
         type: 3}
@@ -1943,6 +2034,96 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy Spacecrafts
+      objectReference: {fileID: 0}
+    - target: {fileID: 377347604398201442, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Cerberus (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376418874957150010, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Grim Reaper (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 377066214484049363, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Hydra (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 377347605586592654, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Cerberus (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376418874681832079, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Grim Reaper (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 377066213562106634, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Hydra (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 377347605572988667, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Medusa (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 377066212974374043, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Hydra (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 377347604696058598, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Cerberus (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 377347604207342110, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Medusa (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376706139155955444, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Hunter (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376738208556209877, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Goliath (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376706139790470214, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Hunter (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376418873398835304, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Grim Reaper (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376738208221436561, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Goliath (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376706139429850043, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Hunter (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376738209357592292, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Goliath (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 377347605582113434, guid: 2647e1d276c1f75458013f63b69875d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Medusa (2)
       objectReference: {fileID: 0}
     - target: {fileID: 377347604090039889, guid: 2647e1d276c1f75458013f63b69875d0,
         type: 3}
@@ -2733,96 +2914,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 161.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 377066212974374043, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Hydra (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 377066213562106634, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Hydra (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 377066214484049363, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Hydra (0)
-      objectReference: {fileID: 0}
-    - target: {fileID: 376418874681832079, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Grim Reaper (0)
-      objectReference: {fileID: 0}
-    - target: {fileID: 376418874957150010, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Grim Reaper (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 376418873398835304, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Grim Reaper (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 376706139155955444, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Hunter (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 376706139790470214, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Hunter (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 376706139429850043, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Hunter (0)
-      objectReference: {fileID: 0}
-    - target: {fileID: 376738208556209877, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Goliath (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 376738208221436561, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Goliath (0)
-      objectReference: {fileID: 0}
-    - target: {fileID: 376738209357592292, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Goliath (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 377347604207342110, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Medusa (0)
-      objectReference: {fileID: 0}
-    - target: {fileID: 377347604398201442, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Cerberus (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 377347604696058598, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Cerberus (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 377347605572988667, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Medusa (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 377347605582113434, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Medusa (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 377347605586592654, guid: 2647e1d276c1f75458013f63b69875d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Cerberus (0)
       objectReference: {fileID: 0}
     - target: {fileID: 5324517234230659810, guid: 2647e1d276c1f75458013f63b69875d0,
         type: 3}
