@@ -10,6 +10,12 @@ public class CollisionController : MonoBehaviour
     [SerializeField] GameObject deathFX;
 
     void OnTriggerEnter(Collider other) {
+        Death();
+        print(other.gameObject.name);
+        print(other.gameObject.tag);
+    }
+
+    void Death() {
         DeathSequence();
         deathFX.SetActive(true);
         Invoke("ReloadLevel", levelLoadDelay);

@@ -170,29 +170,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.36100003
       objectReference: {fileID: 0}
-    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
-      propertyPath: CollisionModule.m_Bounce.scalar
+    - target: {fileID: 951953223, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
+      propertyPath: positionYawFactor
+      value: 1.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445841834057288412, guid: e489f766cb55b2b48acc580b1f07166d,
+        type: 3}
+      propertyPath: m_AllowRoll
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
-      propertyPath: CollisionModule.maxKillSpeed
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
-      propertyPath: CollisionModule.radiusScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
-      propertyPath: CollisionModule.minKillSpeed
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3445841834057288413, guid: e489f766cb55b2b48acc580b1f07166d,
         type: 3}
@@ -219,14 +204,25 @@ PrefabInstance:
       propertyPath: InitialModule.startLifetime.scalar
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3445841834057288412, guid: e489f766cb55b2b48acc580b1f07166d,
-        type: 3}
-      propertyPath: m_AllowRoll
+    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 951953223, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
-      propertyPath: positionYawFactor
-      value: 1.85
+    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
+      propertyPath: CollisionModule.maxKillSpeed
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
+      propertyPath: CollisionModule.radiusScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079181931, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e489f766cb55b2b48acc580b1f07166d, type: 3}

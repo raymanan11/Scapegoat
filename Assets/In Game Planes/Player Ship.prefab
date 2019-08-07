@@ -526,6 +526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Death FX
       objectReference: {fileID: 0}
+    - target: {fileID: 7315544634371025669, guid: baaa57e57c0258c4dbc8fd9d0f7b52ee,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7315544634371025668, guid: baaa57e57c0258c4dbc8fd9d0f7b52ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -595,11 +600,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7315544634371025669, guid: baaa57e57c0258c4dbc8fd9d0f7b52ee,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baaa57e57c0258c4dbc8fd9d0f7b52ee, type: 3}
@@ -691,11 +691,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AllowRoll
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7894084368949475339, guid: 4e561cf148886a740baebfe412fd250c,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7894084368949475339, guid: 4e561cf148886a740baebfe412fd250c,
         type: 3}
