@@ -84,22 +84,19 @@ public class Spacecraft : MonoBehaviour {
 
     private void SpaceshipShooting() {
        if (CrossPlatformInputManager.GetButton("Fire")) {
-            FireGuns();
+            GunsActive(true);
        }
        else {
-            StopGuns();
+            GunsActive(false); 
         }
     }
 
-    private void FireGuns() {
+    private void GunsActive(bool isActive) {
         foreach (GameObject bullet in bullets) {
-            bullet.SetActive(true);
+            var bullets = bullet.GetComponent<ParticleSystem>().emission;
+            bullets.enabled = isActive;
         }
     }
 
-    private void StopGuns() {
-        foreach (GameObject bullet in bullets) {
-            bullet.SetActive(false);
-        }
-    }
+    
 }
