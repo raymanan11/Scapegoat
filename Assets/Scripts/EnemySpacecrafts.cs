@@ -29,7 +29,7 @@ public class EnemySpacecrafts : MonoBehaviour
     void OnParticleCollision(GameObject other) {
         switch (other.gameObject.tag) {
             case "FighterJetBullets":
-                gameScore.Score(scorePerShot); // access the function from GameScore script
+                gameScore.Score(scorePerShot); // access the function from GameScore script to increase the score
                 maximumShots = maximumShots - 1;
                 if (maximumShots < 1) {
                     DestroyEnemy();

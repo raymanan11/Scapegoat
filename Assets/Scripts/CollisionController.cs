@@ -11,8 +11,7 @@ public class CollisionController : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         Death();
-        print(other.gameObject.name);
-        print(other.gameObject.tag);
+        print("Hit");
     }
 
     void Death() {
